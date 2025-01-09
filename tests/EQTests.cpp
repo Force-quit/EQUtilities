@@ -11,6 +11,9 @@ EQTests::EQTests()
 	auto layout = new QVBoxLayout;
 	centralWidget->setLayout(layout);
 
-	auto intLineEdit = new EQIntLineEdit(0, 100, 50);
-	layout->addWidget(intLineEdit);
+	auto intLineEdit1 = new EQIntLineEdit(0, 100, 50);
+	layout->addWidget(intLineEdit1);
+
+	auto intLineEdit2 = new EQIntLineEdit(0, 100, 50);
+	layout->addWidget(intLineEdit2);
 }
