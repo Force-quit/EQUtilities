@@ -1,7 +1,7 @@
 #include "EQShortcutPicker.h"
 
-import eutilities;
-import EShortcutListener;
+#include "EUtilities.hpp"
+#include "EShortcutListener.hpp"
 
 #include <QString>
 #include <QWidget>
@@ -11,7 +11,6 @@ import EShortcutListener;
 #include <QVector>
 #include <initializer_list>
 #include <functional>
-#include <QVector>
 #include <string_view>
 #include <array>
 #include <algorithm>
@@ -95,7 +94,7 @@ void EQShortcutPicker::changingShortcutLoop(std::stop_token stopToken)
 			break;
 		}
 
-		eutilities::sleepFor(5);
+		eutilities::sleepFor(std::chrono::milliseconds(5));
 	}
 
 	if (!stopToken.stop_requested())
@@ -123,7 +122,7 @@ void EQShortcutPicker::waitForShortcutRelease(std::span<const eutilities::Key> k
 			it = keys.cbegin();
 		}
 
-		eutilities::sleepFor(5);
+		eutilities::sleepFor(std::chrono::milliseconds(5));
 	}
 }
 

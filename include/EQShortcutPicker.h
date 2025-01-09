@@ -1,8 +1,7 @@
 #pragma once
 
-#pragma warning(disable:5050)
-import eutilities;
-import EShortcutListener;
+#include "EUtilities-Windows.hpp"
+#include "EShortcutListener.hpp"
 
 #include <array>
 #include <QLabel>
@@ -55,5 +54,5 @@ private:
 	QPushButton* mChangeShortcutButton{ new QPushButton("Change") };
 	QLabel* mShortcutLabel;
 	bool mWasListening{};
-	EShortcutListener mShortcutListener;
+	eutilities::EShortcutListener mShortcutListener;
 };
