@@ -1,4 +1,4 @@
-#include "EQShortcutPicker.h"
+#include "EQShortcutPicker.hpp"
 
 #include "EUtilities.hpp"
 #include "EShortcutListener.hpp"

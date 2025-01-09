@@ -1,7 +1,7 @@
 #pragma once
 
 #include <QLineEdit>
-#include "EQIntValidator.h"
+#include "EQIntValidator.hpp"
 
 class EQIntLineEdit : public QLineEdit
 {

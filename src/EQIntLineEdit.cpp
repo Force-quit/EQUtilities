@@ -1,5 +1,5 @@
-#include "EQIntLineEdit.h"
-#include "EQIntValidator.h"
+#include "EQIntLineEdit.hpp"
+#include "EQIntValidator.hpp"
 
 EQIntLineEdit::EQIntLineEdit(int iMinimum, int iMaximum, int iDefaultValue)
 	: mValidator{ new EQIntValidator(iMinimum, iMaximum) },

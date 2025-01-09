@@ -1,4 +1,4 @@
-#include "EQTextValidator.h"
+#include "EQTextValidator.hpp"
 
 EQTextValidator::EQTextValidator()
 {

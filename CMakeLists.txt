@@ -18,13 +18,13 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(EUtilities)
 
 set(EQUTILITIES_SOURCE
-    include/EQIntLineEdit.h
+    include/EQIntLineEdit.hpp
     src/EQIntLineEdit.cpp
-    include/EQIntValidator.h
+    include/EQIntValidator.hpp
     src/EQIntValidator.cpp
-    include/EQShortcutPicker.h
+    include/EQShortcutPicker.hpp
     src/EQShortcutPicker.cpp
-    include/EQTextValidator.h
+    include/EQTextValidator.hpp
     src/EQTextValidator.cpp
 )
 

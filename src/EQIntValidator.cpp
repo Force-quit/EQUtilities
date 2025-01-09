@@ -1,4 +1,4 @@
-#include "EQIntValidator.h"
+#include "EQIntValidator.hpp"
 
 EQIntValidator::EQIntValidator(int iMinimum, int iMaximum)
 	: QIntValidator(iMinimum, iMaximum)
