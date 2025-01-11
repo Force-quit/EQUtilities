@@ -26,6 +26,7 @@ set(EQUTILITIES_SOURCE
     src/EQShortcutPicker.cpp
     include/EQTextValidator.hpp
     src/EQTextValidator.cpp
+    include/EQThread.hpp
 )
 
 qt_add_library(EQUtilities STATIC ${EQUTILITIES_SOURCE})
