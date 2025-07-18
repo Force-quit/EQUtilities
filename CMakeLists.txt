@@ -31,6 +31,10 @@ qt_add_library(EQUtilities STATIC ${EQUTILITIES_SOURCE})
 target_link_libraries(EQUtilities PRIVATE Qt6::Widgets EUtilities)
 target_include_directories(EQUtilities PUBLIC include)
 
+if(MSVC)
+    target_compile_options(EQUtilities PRIVATE /EHsc)
+endif()
+
 if(PROJECT_IS_TOP_LEVEL)
     add_subdirectory(tests)
 endif()
