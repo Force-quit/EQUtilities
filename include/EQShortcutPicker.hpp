@@ -1,7 +1,7 @@
 #pragma once
 
-#include "EUtilities-Windows.hpp"
-#include "EShortcutListener.hpp"
+#include <EUtilities-Windows.hpp>
+#include <EShortcutListener.hpp>
 
 #include <array>
 #include <QLabel>

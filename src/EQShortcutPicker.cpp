@@ -1,7 +1,7 @@
 #include "EQShortcutPicker.hpp"
 
-#include "EUtilities.hpp"
-#include "EShortcutListener.hpp"
+#include <EUtilities.hpp>
+#include <EShortcutListener.hpp>
 
 #include <QString>
 #include <QWidget>
@@ -18,8 +18,8 @@
 #include <ranges>
 
 EQShortcutPicker::EQShortcutPicker(QString iShortcutTriggerText)
-	: mShortcutLabel{ new QLabel(eutilities::nameOf(DEFAULT_KEY).c_str()) }
 {
+	mShortcutLabel = new QLabel(QString::fromUtf8(eutilities::nameOf(DEFAULT_KEY)));
 	QHBoxLayout* centralLayout{ new QHBoxLayout };
 	QLabel* widgetName{ new QLabel(iShortcutTriggerText) };
 

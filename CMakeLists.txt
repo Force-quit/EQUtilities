@@ -28,7 +28,7 @@ set(EQUTILITIES_SOURCE
 )
 
 qt_add_library(EQUtilities STATIC ${EQUTILITIES_SOURCE})
-target_link_libraries(EQUtilities PRIVATE Qt6::Widgets EUtilities)
+target_link_libraries(EQUtilities PUBLIC Qt6::Widgets EUtilities)
 target_include_directories(EQUtilities PUBLIC include)
 
 if(MSVC)
