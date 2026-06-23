@@ -20,7 +20,7 @@ public:
 
 	[[nodiscard]] std::vector<eutilities::Key> targetKeys() const;
 
-	void setTargetKeys(std::span<const eutilities::Key> targetKeys);
+	void setTargetKeys(std::span<eutilities::Key> targetKeys);
 
 public slots:
 	void startListening();

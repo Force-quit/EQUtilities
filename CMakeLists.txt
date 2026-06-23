@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 4.1.1)
+cmake_minimum_required(VERSION 4.3.1)
 project(EQUtilities LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 23)

@@ -31,7 +31,7 @@ EQShortcutPicker::EQShortcutPicker(QString iShortcutTriggerText)
 
 	setLayout(centralLayout);
 
-	mShortcutListener.setTargetKeys(DEFAULT_KEY);
+	mShortcutListener.setTargetKeys({ DEFAULT_KEY });
 
 	connect(mChangeShortcutButton, &QPushButton::clicked, this, &EQShortcutPicker::startChangingShortcut);
 	connect(mChangeShortcutButton, &QPushButton::clicked, mChangeShortcutButton, &QWidget::setEnabled);
@@ -163,7 +163,7 @@ std::vector<eutilities::Key> EQShortcutPicker::targetKeys() const
 	return mShortcutListener.targetKeys();
 }
 
-void EQShortcutPicker::setTargetKeys(std::span<const eutilities::Key> targetKeys)
+void EQShortcutPicker::setTargetKeys(std::span<eutilities::Key> targetKeys)
 {
 	mShortcutListener.setTargetKeys(targetKeys);
 	updateShortcutText(targetKeys);
